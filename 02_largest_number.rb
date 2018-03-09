@@ -15,5 +15,11 @@
 #
 
 def largest_number (number_1, number_2)
-  # Your code here
+  if number_1 > number_2
+    then number_1
+  else number_2
+  end
 end
+
+largest_number(10, 20)
+largest_number(100, 50)
