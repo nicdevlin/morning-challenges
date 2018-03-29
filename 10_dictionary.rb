@@ -21,5 +21,27 @@
 #
 
 class Dictionary
-  # Your code here
+
+  def initialize(word_total: [], word_entry: {})
+    @word_total = word_total
+    @word_entry = word_entry
+  end
+
+  def add_word(word, description)
+    @word_total.push(word)
+    @word_entry[word] = description
+  end
+
+  def total_words
+    return @word_total.length
+  end
+
+  def lookup(word)
+    @word_entry.each do | key, description |
+      if word == key
+        return description
+      end
+    end
+  end
+
 end

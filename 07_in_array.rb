@@ -16,6 +16,6 @@
 #
 #Don't use any helpers other than .each
 #Try writing it on a whiteboard or paper first
-def in_array (needle, haystack)
-  # Your code here
+def in_array (string, array)
+  array.include?(string) ? true : false
 end

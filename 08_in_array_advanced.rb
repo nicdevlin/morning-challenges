@@ -20,6 +20,17 @@
 #
 #Don't use any helpers other than .each
 #Try writing it on a whiteboard or paper first
-def in_array_advanced (needle, haystack, strict)
-  # Your code here
+def in_array_advanced(string, array, boolean)
+  array.each do |names|
+    if boolean == true
+      if names == string
+        return true
+      end
+    else
+      if names.downcase == string.downcase
+        return true
+      end
+    end
+  end
+  return false
 end

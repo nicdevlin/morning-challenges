@@ -18,6 +18,15 @@
 # ruby tests/09_unique_test.rb
 #
 
-def unique (mylist)
-  # Your code here
+def unique(mylist)
+  results = {}
+  answer = []
+
+  mylist.each do | letter |
+    results[letter] = nil
+  end
+  results.each do | key, value |
+      answer.push(key)
+  end
+  return answer
 end
